@@ -11,7 +11,9 @@ export function AddItemForm(props: AddItemFormPropsType) {
     let [error, setError] = useState<string | null>(null)
 
     const addItem = () => {
+        // debugger
         if (title.trim() !== "") {
+            // debugger
             props.addItem(title);
             setTitle("");
         } else {
